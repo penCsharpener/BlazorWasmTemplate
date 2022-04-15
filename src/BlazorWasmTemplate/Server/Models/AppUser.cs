@@ -2,7 +2,7 @@
 
 namespace BlazorWasmTemplate.Server.Models
 {
-    public class ApplicationUser : IdentityUser
+    public class AppUser : IdentityUser<int>
     {
     }
 }
