@@ -6,9 +6,9 @@ using Microsoft.Extensions.Options;
 
 namespace BlazorWasmTemplate.Server.Data
 {
-    public class ApplicationDbContext : CustomApiAuthorizationDbContext<AppUser, IdentityRole<int>, int>
+    public class AppDbContext : CustomApiAuthorizationDbContext<AppUser, IdentityRole<int>, int>
     {
-        public ApplicationDbContext(
+        public AppDbContext(
             DbContextOptions options,
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
