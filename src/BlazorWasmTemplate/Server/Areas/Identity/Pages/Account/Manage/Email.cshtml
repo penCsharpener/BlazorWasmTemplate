@@ -14,27 +14,27 @@
             @if (Model.IsEmailConfirmed)
             {
                 <div class="input-field col s12 input-group">
-                    <input asp-for="Email" class="form-control" disabled />
+                    <input asp-for="Email" class="validate" disabled />
                         <div class="input-group-append">
                             <span class="h-100 input-group-text text-success font-weight-bold">✓</span>
                         </div>
-                    <label asp-for="Email" class="form-label"></label>
+                    <label asp-for="Email"></label>
                 </div>
             }
             else
             {
                 <div class="input-field col s12">
-                    <input asp-for="Email" class="form-control" disabled />
-                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="validate" disabled />
+                    <label asp-for="Email"></label>
                     <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button>
                 </div>
             }
             <div class="input-field col s12">
-                <input asp-for="Input.NewEmail" class="form-control" autocomplete="email" aria-required="true" />
-                <label asp-for="Input.NewEmail" class="form-label"></label>
+                <input asp-for="Input.NewEmail" class="validate" autocomplete="email" aria-required="true" />
+                <label asp-for="Input.NewEmail"></label>
                 <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
             </div>
-            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="w-100 btn btn-lg btn-primary">Change email</button>
+            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn waves-effect waves-light">Change email</button>
         </form>
     </div>
 </div>
