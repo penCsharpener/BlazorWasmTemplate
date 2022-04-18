@@ -2,18 +2,14 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
 
-using System;
-using System.ComponentModel.DataAnnotations;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
 using BlazorWasmTemplate.Server.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+using System.Text;
+using System.Text.Encodings.Web;
 
 namespace BlazorWasmTemplate.Server.Areas.Identity.Pages.Account.Manage
 {
@@ -181,7 +177,7 @@ namespace BlazorWasmTemplate.Server.Areas.Identity.Pages.Account.Manage
             return string.Format(
                 CultureInfo.InvariantCulture,
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("Microsoft.AspNetCore.Identity.UI"),
+                _urlEncoder.Encode("BlazorWasmTemplate.Server"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }
