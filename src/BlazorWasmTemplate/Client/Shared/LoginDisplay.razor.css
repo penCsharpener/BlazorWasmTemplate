@@ -1,0 +1,20 @@
+﻿$color: #fff;
+
+::deep a:link {
+  color: $color;
+}
+
+::deep a:hover {
+  color: $color;
+}
+
+::deep .auth-link-btn {
+  color: $color;
+  min-width: 200px;
+  max-width: 350px;
+  padding: 0 10px 0 10px;
+}
+
+::deep button:hover {
+  color: $color;
+}
