@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{568E2838-2B5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C0904718-9240-46BF-9B0D-C928F61AD4DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmTemplate.Server", "src\BlazorWasmTemplate\Server\BlazorWasmTemplate.Server.csproj", "{BDE6E44B-7C0D-4C8F-A358-A7846B666D7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmTemplate.Api", "src\BlazorWasmTemplate.Api\BlazorWasmTemplate.Api.csproj", "{BDE6E44B-7C0D-4C8F-A358-A7846B666D7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmTemplate.Client", "src\BlazorWasmTemplate\Client\BlazorWasmTemplate.Client.csproj", "{CBE3D537-A01C-4005-83DA-1796F278D2C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmTemplate.WasmClient", "src\BlazorWasmTemplate.WasmClient\BlazorWasmTemplate.WasmClient.csproj", "{CBE3D537-A01C-4005-83DA-1796F278D2C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmTemplate.Shared", "src\BlazorWasmTemplate\Shared\BlazorWasmTemplate.Shared.csproj", "{09993882-3C37-4DA7-A8DD-5D6759AC2666}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmTemplate.Shared", "src\BlazorWasmTemplate.Shared\BlazorWasmTemplate.Shared.csproj", "{09993882-3C37-4DA7-A8DD-5D6759AC2666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

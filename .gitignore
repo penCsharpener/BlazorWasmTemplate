@@ -348,5 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-src/BlazorWasmTemplate/Client/wwwroot/libman/
-src/BlazorWasmTemplate/Server/wwwroot/lib/
+src/BlazorWasmTemplate.WasmClient/wwwroot/libman/
+src/BlazorWasmTemplate.Api/wwwroot/lib/
