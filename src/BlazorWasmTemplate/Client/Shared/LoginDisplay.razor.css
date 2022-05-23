@@ -1,20 +1,23 @@
-﻿$color: #fff;
-
+﻿
 ::deep a:link {
-  color: $color;
 }
 
 ::deep a:hover {
-  color: $color;
+  color: #FFF;
 }
 
 ::deep .auth-link-btn {
-  color: $color;
-  min-width: 200px;
-  max-width: 350px;
+  min-width: fit-content;
   padding: 0 10px 0 10px;
 }
 
+::deep .profile-link {
+
+}
+
+::deep .sign-out-link {
+
+}
+
 ::deep button:hover {
-  color: $color;
 }

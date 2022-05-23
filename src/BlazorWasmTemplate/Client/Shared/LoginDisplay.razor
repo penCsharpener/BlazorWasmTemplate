@@ -4,16 +4,18 @@
 @inject NavigationManager Navigation
 @inject SignOutSessionStateManager SignOutManager
 
-<AuthorizeView>
-    <Authorized>
-        <MudNavLink Href="authentication/profile" Class="auth-link-btn">Hello, @context.User.Identity?.Name!</MudNavLink>
-        <MudNavLink Class="auth-link-btn" Icon="@Icons.Material.Filled.Logout" @onclick="BeginSignOut">Log out</MudNavLink>
-    </Authorized>
-    <NotAuthorized>
-        <MudNavLink Href="authentication/register" Icon="@Icons.Material.Filled.AppRegistration" Class="auth-link-btn">Register</MudNavLink>
-        <MudNavLink Href="authentication/login" Icon="@Icons.Material.Filled.Login" Class="auth-link-btn">Log in</MudNavLink>
-    </NotAuthorized>
-</AuthorizeView>
+<div class="d-flex flex-row align-content-center justify-content-center">
+  <AuthorizeView>
+      <Authorized>
+          <MudNavLink Class="auth-link-btn profile-link" IconColor="Color.Inherit" Href="authentication/profile">Hello, @context.User.Identity?.Name!</MudNavLink>
+          <MudNavLink Class="auth-link-btn sign-out-link" IconColor="Color.Inherit" Icon="@Icons.Material.Filled.Logout" @onclick="BeginSignOut">Log out</MudNavLink>
+      </Authorized>
+      <NotAuthorized>
+          <MudNavLink Class="auth-link-btn" Href="authentication/register" IconColor="Color.Inherit" Icon="@Icons.Material.Filled.AppRegistration">Register</MudNavLink>
+          <MudNavLink Class="auth-link-btn" Href="authentication/login" IconColor="Color.Inherit" Icon="@Icons.Material.Filled.Login">Log in</MudNavLink>
+      </NotAuthorized>
+  </AuthorizeView>
+</div>
 
 @code{
     private async Task BeginSignOut(MouseEventArgs args)
